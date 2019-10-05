@@ -11,4 +11,6 @@ public class EventDescriptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_description);
     }
+
+    public void
 }
