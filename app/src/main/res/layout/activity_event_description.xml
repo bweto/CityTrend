@@ -40,7 +40,8 @@
         android:layout_marginTop="16dp"
         android:text="TextView"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        tools:layout_editor_absoluteX="46dp" />
+        tools:layout_editor_absoluteX="46dp"
+        android:textSize="@dimen/fontsizelayout"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -49,7 +50,8 @@
         android:layout_marginTop="16dp"
         android:text="TextView"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        tools:layout_editor_absoluteX="306dp" />
+        tools:layout_editor_absoluteX="306dp"
+        android:textSize="@dimen/fontsizelayout"/>
 
     <EditText
         android:id="@+id/editText7"
@@ -75,9 +77,12 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="TextView"
+        android:textSize="@dimen/fontsizelayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="534dp" />
+        tools:layout_editor_absoluteY="477dp"
+        android:textSize="@dimen/fontsizelayout"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -88,9 +93,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:text="TextView"
+        android:textSize="@dimen/fontsizelayout"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,4 +18,5 @@
     <string name="login_password">Contraseña</string>
     <string name="login_registrarme">Registrarme</string>
     <string name="login_resetear">Recuperar Contraseña</string>
+    <string name="fontsizelayout">TextView</string>
 </resources>
