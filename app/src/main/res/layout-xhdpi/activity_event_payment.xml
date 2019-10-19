@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="745dp"
-        android:layout_height="416dp"
+        android:layout_width="311dp"
+        android:layout_height="214dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
@@ -24,32 +24,119 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="103dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_width="47dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView10"
         app:srcCompat="@mipmap/visa"
-        tools:layout_editor_absoluteY="861dp" />
+        tools:layout_editor_absoluteY="520dp" />
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="110dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="96dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:srcCompat="@mipmap/mastercard"
-        tools:layout_editor_absoluteX="395dp" />
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        app:layout_constraintStart_toStartOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:srcCompat="@mipmap/mastercard" />
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="105dp"
-        android:layout_height="62dp"
+        android:layout_width="52dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@mipmap/paypal" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
-        app:srcCompat="@mipmap/paypal"
-        tools:layout_editor_absoluteY="861dp" />
+        android:text="2 Entradas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="| 19-11-2019 | 18:00 h "
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Precio total:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/fontsizelayout"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="$ 950.000"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="359dp"
+        android:textSize="@dimen/fontsizelayout"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Medios de pago:"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="423dp"
+        android:textSize="@dimen/fontsizelayout"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="AC/DC (Bogotá)"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        android:textSize="@dimen/fontsizelayout"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="28dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -58,97 +145,5 @@
         app:srcCompat="@mipmap/american-express"
         tools:layout_editor_absoluteX="13dp"
         tools:layout_editor_absoluteY="450dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:text="2 Entradas"
-        android:textSize="@dimen/fontsizelayout"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="16dp"
-        android:text="| 19-11-2019 | 18:00 h "
-        android:textSize="16sp"
-        android:textSize="@dimen/fontsizelayout"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:text="Precio total:"
-        android:textSize="@dimen/fontsizelayout"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:text="$ 950.000"
-        android:textSize="@dimen/fontsizelayout"
-        android:textSize="@dimen/fontsizelayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="632dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:text="Medios de pago:"
-        android:textSize="@dimen/fontsizelayout"
-        android:textSize="@dimen/fontsizelayout"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="730dp" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="28dp"
-        android:text="AC/DC (Bogotá)"
-        android:textColor="#3F51B5"
-        android:textSize="@dimen/fontsizelayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="0dp"
-        android:layout_height="3dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="590dp" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="0dp"
-        android:layout_height="3dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="699dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

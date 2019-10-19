@@ -12,5 +12,4 @@ public class EventDescriptionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_event_description);
     }
 
-    public void
 }

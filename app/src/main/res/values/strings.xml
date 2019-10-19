@@ -18,5 +18,8 @@
     <string name="login_password">Contraseña</string>
     <string name="login_registrarme">Registrarme</string>
     <string name="login_resetear">Recuperar Contraseña</string>
-    <string name="fontsizelayout">TextView</string>
+    <string name="event_date">Fecha: NOV 19 de 2019</string>
+    <string name="ticket">TICKETS</string>
+    <string name="back">BACK</string>
+
 </resources>
