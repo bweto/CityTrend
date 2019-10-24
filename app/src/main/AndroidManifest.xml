@@ -12,11 +12,11 @@
         <activity android:name=".EventDescriptionActivity"></activity>
         <activity android:name=".EventRatingActivity" />
         <activity android:name=".SearchItemActivity" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".EventPaymentActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".RegisterActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

@@ -51,13 +51,7 @@
         app:srcCompat="@mipmap/paypal"
         tools:layout_editor_absoluteY="861dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/american-express"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="450dp" />
+
 
     <TextView
         android:id="@+id/textView6"
@@ -78,7 +72,6 @@
         android:layout_marginLeft="52dp"
         android:layout_marginTop="16dp"
         android:text="| 19-11-2019 | 18:00 h "
-        android:textSize="16sp"
         android:textSize="@dimen/fontsizelayout"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -102,7 +95,6 @@
         android:layout_marginRight="28dp"
         android:text="$ 950.000"
         android:textSize="@dimen/fontsizelayout"
-        android:textSize="@dimen/fontsizelayout"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="632dp" />
 
@@ -113,7 +105,6 @@
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:text="Medios de pago:"
-        android:textSize="@dimen/fontsizelayout"
         android:textSize="@dimen/fontsizelayout"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="730dp" />
