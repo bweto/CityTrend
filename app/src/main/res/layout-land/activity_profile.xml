@@ -9,21 +9,41 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="57dp"
-        android:layout_height="45dp"
+        android:layout_width="45dp"
+        android:layout_height="27dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/envelope"
-        tools:layout_editor_absoluteY="254dp" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:srcCompat="@mipmap/envelope" />
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
+        android:layout_width="46dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:srcCompat="@mipmap/placeholder"
-        tools:layout_editor_absoluteX="408dp"
-        tools:layout_editor_absoluteY="254dp" />
+        tools:layout_editor_absoluteX="408dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="45dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@mipmap/calendar"
+        tools:layout_editor_absoluteX="74dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="45dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@mipmap/settings"
+        tools:layout_editor_absoluteX="409dp" />
 
     <TextView
         android:id="@+id/textView18"
@@ -31,11 +51,40 @@
         android:layout_height="26dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
         android:text="ArthurMCFarlane@gmail.com"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
-        tools:layout_editor_absoluteY="263dp" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="202dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Porximos Eventos"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        tools:layout_editor_absoluteX="149dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="207dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        android:text="Santa Monica CA - USA"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:layout_editor_absoluteX="474dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="199dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:text="Configuraciones"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        tools:layout_editor_absoluteX="482dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="734dp"
         android:layout_height="250dp"
         android:background="#0ccbe5"
@@ -58,13 +107,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
             android:text="Arthur McFarlane"
             android:textColor="#fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="171dp" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
         <TextView
             android:id="@+id/textView23"
@@ -72,55 +122,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
             android:text="Promotor de eventos"
             android:textColor="#fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="199dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="207dp"
-        android:layout_height="21dp"
-        android:text="Santa Monica CA - USA"
-        tools:layout_editor_absoluteX="474dp"
-        tools:layout_editor_absoluteY="263dp" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="52dp"
-        android:layout_height="45dp"
-        app:srcCompat="@mipmap/calendar"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="313dp" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="202dp"
-        android:layout_height="24dp"
-        android:text="Porximos Eventos"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="323dp" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
-        app:srcCompat="@mipmap/settings"
-        tools:layout_editor_absoluteX="409dp"
-        tools:layout_editor_absoluteY="313dp" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="199dp"
-        android:layout_height="23dp"
-        android:text="Configuraciones"
-        tools:layout_editor_absoluteX="482dp"
-        tools:layout_editor_absoluteY="324dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

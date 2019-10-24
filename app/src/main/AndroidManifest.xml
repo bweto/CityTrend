@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EventDescriptionActivity"></activity>
+        <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".EventRatingActivity" />
         <activity android:name=".SearchItemActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".EventPaymentActivity" />
+        <activity android:name=".EventDescriptionActivity" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".EventPaymentActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
