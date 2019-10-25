@@ -16,22 +16,25 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:src="@mipmap/acdc2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@mipmap/acdc2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="47dp"
         android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:srcCompat="@mipmap/visa" />
+        android:src="@mipmap/visa" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -39,24 +42,27 @@
         android:layout_height="35dp"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:srcCompat="@mipmap/mastercard"
+        android:src="@mipmap/mastercard"
         tools:layout_editor_absoluteX="137dp" />
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="52dp"
         android:layout_height="32dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView10"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
-        app:srcCompat="@mipmap/paypal" />
+        android:src="@mipmap/paypal" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/american-express"
+        android:src="@mipmap/american-express"
         tools:layout_editor_absoluteX="13dp"
         tools:layout_editor_absoluteY="450dp" />
 
@@ -110,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="Medios de pago:"
         android:textSize="@dimen/fontsizelayout"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,7 +150,7 @@
         android:id="@+id/divider2"
         android:layout_width="0dp"
         android:layout_height="3dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

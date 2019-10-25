@@ -9,20 +9,21 @@
 
     <EditText
         android:id="@+id/editText7"
-        android:layout_width="351dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_width="282dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:text="En noviembre de 1973, Malcolm Young y Angus Young formaron AC/DC , reclutando al bajista Larry Van Kriedt, al cantante Dave Evans y al baterista Colin Burgess. "
+        android:textAlignment="gravity"
         android:textSize="@dimen/text_areafont"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 

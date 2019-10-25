@@ -9,21 +9,52 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".EventRatingActivity" />
-        <activity android:name=".SearchItemActivity" />
+        <activity android:name=".RegisterActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".EventDescriptionActivity"
+            android:parentActivityName=".SearchItemActivity"  >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SearchItemActivity" />
+        </activity>
+        <activity android:name=".SearchItemActivity"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".EventDescriptionActivity" />
+        <activity android:name=".EventRatingActivity"
+            android:parentActivityName=".EventDescriptionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventDescriptionActivity" />
+        </activity>
+        <activity android:name=".EventPaymentActivity"
+            android:parentActivityName=".EventDescriptionActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EventDescriptionActivity" />
+
+        </activity>
         <activity
-            android:name=".EventPaymentActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegisterActivity" />
         </activity>
     </application>
 

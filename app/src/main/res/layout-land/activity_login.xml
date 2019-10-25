@@ -69,7 +69,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/user" />
+        android:src="@mipmap/user" />
 
     <TextView
         android:id="@+id/textView3"
