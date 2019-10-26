@@ -11,8 +11,8 @@
         android:id="@+id/editText7"
         android:layout_width="283dp"
         android:layout_height="137dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
@@ -20,7 +20,7 @@
         android:inputType="textMultiLine"
         android:textSize="@dimen/text_areafont"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
         tools:text="En noviembre de 1973, Malcolm Young y Angus Young formaron AC/DC , reclutando al bajista Larry Van Kriedt, al cantante Dave Evans y al baterista Colin Burgess. " />
@@ -35,10 +35,10 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:src="@mipmap/acdc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        android:src="@mipmap/acdc" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -86,6 +86,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:hint="@string/ticket"
+        android:onClick="getTicketsView"
         android:textSize="@dimen/fontsizelayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,7 +100,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:hint="@string/back"
+        android:hint="CALIFICAR"
+        android:onClick="rateEventView"
         android:textSize="@dimen/fontsizelayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

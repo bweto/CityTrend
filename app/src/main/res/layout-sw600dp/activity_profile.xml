@@ -17,6 +17,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:onClick="sendMessage"
         android:text="Ir a eventos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -32,6 +33,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:onClick="sendMessage"
         android:text="Organizador de eventos en la ciudad, motivado por generar nuevas experiencias en las personas
         de todo los rincones de la ciudad y del país, mi idea es organizar eventos que desconozcan etnías, clases sociales
         o cualquier otro tipo de barrera socio-cultural."
