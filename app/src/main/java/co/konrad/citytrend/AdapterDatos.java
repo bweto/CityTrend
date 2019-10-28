@@ -1,57 +1,59 @@
 package co.konrad.citytrend;
-
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import java.util.List;
 
-import java.util.ArrayList;
-
-public class AdapterDatos  extends RecyclerView.Adapter<AdapterDatos.ViewHolderDatos>{
-
-
-    ArrayList<String> listDato;
+public class AdapterDatos  extends RecyclerView.Adapter<AdapterDatos.ViewHolder>{
 
 
-    public AdapterDatos(ArrayList<String> listDatos) {
-        this.listDato = listDatos;
+    private List<ListItem> listitems;
+    private Context context;
+
+    public AdapterDatos(List<ListItem> listitems, Context context) {
+        this.listitems = listitems;
+        this.context = context;
     }
+
 
     @NonNull
     @Override
-    public ViewHolderDatos onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view  = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list, null, false    );
-        return new ViewHolderDatos(view);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view  = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list, parent, false    );
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolderDatos holder, int position) {
-        holder.asignarDatos(listDato.get(position));
-        
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+        ListItem listItem = listitems.get(position);
+
+        /* we will then pass the data to every object we are transfering to
+         * the recycle view from the list view which come from the cardview
+         *  */
+
+        holder.textViewHead.setText(listItem.getHead());
+        holder.textViewDesc.setText(listItem.getDesc());
     }
 
     @Override
     public int getItemCount() {
-        if (listDato != null)
-            return listDato.size();
-        return 0;
+            return listitems.size();
     }
 
-    public class ViewHolderDatos extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView dato;
+        public TextView textViewHead;
+        public TextView textViewDesc;
 
-        public ViewHolderDatos(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            dato = (TextView) itemView.findViewById(R.id.dato);
-        }
-
-        public void asignarDatos(String s) {
-                dato.setText(s);
+            textViewDesc = (TextView) itemView.findViewById(R.id.textdes);
+            textViewHead = (TextView) itemView.findViewById(R.id.texth);
         }
     }
 }

@@ -1,32 +1,23 @@
 package co.konrad.citytrend;
 
 import android.os.Bundle;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import android.view.View;
-import androidx.navigation.NavController;
+ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import com.google.android.material.navigation.NavigationView;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.Menu;
-import android.widget.LinearLayout;
-
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
 
-    ArrayList<String> listDato;
-
-    RecyclerView recycler;
+    private List<ListItem> listItems;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView recycler;
 
     private AppBarConfiguration mAppBarConfiguration;
     @Override
@@ -34,20 +25,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recycler = findViewById(R.id.ReciclerView);
-        listDato = new ArrayList<String>();
+        recycler = (RecyclerView) findViewById(R.id.ReciclerView);
+        recycler.setHasFixedSize(true);
+        recycler.setLayoutManager(new LinearLayoutManager(this));
 
-        for (int i = 0; i < 50 ; i++) {
-            listDato.add("Dato #" + i);
+        listItems = new ArrayList<>();
+
+        for (int i=0 ; i<10; i++) {
+            ListItem item = new ListItem("item " + i+1, "dummy text", "url");
+            listItems.add(item);
         }
 
-
-        AdapterDatos  adapter =  new AdapterDatos(listDato);
-//        recycler.setAdapter(adapter);
-        LinearLayoutManager manager = new LinearLayoutManager(this);
-        recycler.setLayoutManager(manager);
-        recycler.setHasFixedSize(true);
+        adapter = new AdapterDatos(listItems, getApplicationContext());
         recycler.setAdapter(adapter);
+
 
 //        Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);

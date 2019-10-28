@@ -5,6 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/con2"
     android:orientation="vertical">
 
     <EditText
@@ -59,6 +60,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:textColor="@android:color/white"
         android:background="@drawable/button_rounded"
         android:onClick="sendMessage"
         android:text="@string/login_button"
