@@ -14,7 +14,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, SearchItemActivity.class);
+        Intent intent = new Intent(this, EventList.class);
         startActivity(intent);
     }
 

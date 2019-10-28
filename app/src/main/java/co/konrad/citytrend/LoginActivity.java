@@ -18,4 +18,10 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
+
+    public void openevent(View view) {
+        Intent intent = new Intent(this, EventDescriptionActivity.class);
+        startActivity(intent);
+    }
+
 }
